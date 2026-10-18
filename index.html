@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Pistol & Reactive Ragdoll Physics Simulator</title>
+    <meta name="description" content="3D interaktiv to'pponcha va reaksiyali fizikali ragdoll o'yini: zarba joyiga qarab fizik reaksiyalar, sekinlashtirilgan rejim va tana mexanikasi." />
+    <meta property="og:title" content="Pistol & Reactive Ragdoll Physics Simulator" />
+    <meta property="og:description" content="3D interaktiv to'pponcha va reaksiyali fizikali ragdoll o'yini: zarba joyiga qarab fizik reaksiyalar, sekinlashtirilgan rejim va tana mexanikasi." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        try {
+          var _origFetch = window.fetch;
+          var _fetch = _origFetch ? _origFetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            get: function () {
+              return _fetch;
+            },
+            set: function (val) {
+              _fetch = val;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        } catch (e) {
+          // Fallback ignore
+        }
+
+        window.addEventListener('error', function (event) {
+          if (
+            (event.filename && event.filename.indexOf('chrome-extension://') !== -1) ||
+            (event.message && event.message.indexOf('Cannot set property fetch') !== -1)
+          ) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Pistol & Reactive Ragdoll Physics Simulator",
+  "description": "3D interaktiv to'pponcha va reaksiyali fizikali ragdoll o'yini: zarba joyiga qarab fizik reaksiyalar, sekinlashtirilgan rejim va tana mexanikasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
